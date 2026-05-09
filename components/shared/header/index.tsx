@@ -13,14 +13,14 @@ const Header = () => {
           <CategoryDrawer />
           <Link href='/' className='flex-start ml-4'>
             <Image
-              src='/images/logo.svg'
+              src='/images/logo.png'
               alt={`${APP_NAME} logo`}
-              height={48}
-              width={48}
+              height={100}
+              width={100}
               priority={true}
             />
-            <span className='hidden lg:block font-bold text-2xl ml-3'>
-              {APP_NAME}
+            <span className='hidden lg:block text-3xl ml-3' style={{ fontFamily: "'Playfair Display', serif", color: 'var(--deep-brown)', fontWeight: 900 }}>
+              The Gulabi Store
             </span>
           </Link>
         </div>
