@@ -1,4 +1,4 @@
-import { DollarSign, Headset, ShoppingBag, WalletCards } from 'lucide-react';
+import { DollarSign, Headset, IndianRupee, ShoppingBag, WalletCards } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
 const IconBoxes = () => {
@@ -10,11 +10,11 @@ const IconBoxes = () => {
             <ShoppingBag />
             <div className='text-sm font-bold'>Free Shipping</div>
             <div className='text-sm text-muted-foreground'>
-              Free shipping on orders above $100
+              Free shipping on orders above ₹999
             </div>
           </div>
           <div className='space-y-2'>
-            <DollarSign />
+            <IndianRupee />
             <div className='text-sm font-bold'>Money Back Guarantee</div>
             <div className='text-sm text-muted-foreground'>
               Within 30 days of purchase

@@ -8,24 +8,24 @@ import Link from 'next/link';
 
 const prices = [
   {
-    name: '$1 to $50',
-    value: '1-50',
+    name: 'below ₹499',
+    value: '1-499',
   },
   {
-    name: '$51 to $100',
-    value: '51-100',
+    name: '₹500 to ₹1000',
+    value: '500-1000',
   },
   {
-    name: '$101 to $200',
-    value: '101-200',
+    name: '₹1001 to ₹2000',
+    value: '1001-2000',
   },
   {
-    name: '$201 to $500',
-    value: '201-500',
+    name: '₹2001 to ₹3000',
+    value: '2001-3000',
   },
   {
-    name: '$501 to $1000',
-    value: '501-1000',
+    name: 'above ₹3001',
+    value: '3001-6000',
   },
 ];
 

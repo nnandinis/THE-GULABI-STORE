@@ -34,27 +34,63 @@ const ProductDetailsPage = async (props: {
           {/* Details Column */}
           <div className='col-span-2 p-5'>
             <div className='flex flex-col gap-6'>
-              <p>
+              <p
+                style={{
+                  color: 'var(--primary-pink)',
+                  fontWeight: 500,
+                  fontSize: '0.8rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                }}
+              >
                 {product.brand} {product.category}
               </p>
-              <h1 className='h3-bold'>{product.name}</h1>
+              <h1
+                className='h3-bold'
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  color: 'var(--deep-brown)',
+                }}
+              >
+                {product.name}
+              </h1>
               <Rating value={Number(product.rating)} />
               <p>{product.numReviews} reviews</p>
               <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
                 <ProductPrice
                   value={Number(product.price)}
-                  className='w-24 rounded-full bg-green-100 text-green-700 px-5 py-2'
+                  className='w-24 rounded-full bg-pink-100 text-pink-700 px-5 py-2'
                 />
               </div>
             </div>
+            <hr
+              style={{
+                borderColor: 'var(--gold)',
+                opacity: 0.5,
+                margin: '1.5rem 0',
+              }}
+            />
             <div className='mt-10'>
-              <p className='font-semibold'>Description</p>
+              <p
+                className='font-semibold'
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  color: 'var(--deep-brown)',
+                }}
+              >
+                Description
+              </p>
               <p>{product.description}</p>
             </div>
           </div>
           {/* Action Column */}
           <div>
-            <Card>
+            <Card
+              style={{
+                backgroundColor: 'var(--beige)',
+                border: '1px solid var(--muted-rose)',
+              }}
+            >
               <CardContent className='p-4'>
                 <div className='mb-2 flex justify-between'>
                   <div>Price</div>
