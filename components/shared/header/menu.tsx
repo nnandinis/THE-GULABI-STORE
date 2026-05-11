@@ -14,7 +14,7 @@ import UserButton from './user-button';
 const Menu = () => {
   return (
     <div className='flex justify-end gap-3'>
-      <nav className='hidden md:flex w-full max-w-xs gap-1'>
+      <nav className='hidden md:flex items-center gap-1'>
         <ModeToggle />
         <Button asChild variant='ghost'>
           <Link href='/about'>About</Link>

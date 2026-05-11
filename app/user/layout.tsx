@@ -11,19 +11,20 @@ export default function UserLayout({
 }>) {
   return (
     <>
-      <div className='flex flex-col'>
+      <div className='flex flex-col overflow-x-hidden'>
         <div className='border-b container mx-auto'>
-          <div className='flex items-center h-16 px-4'>
-            <Link href='/' className='w-22'>
+          <div className='flex items-center h-20 px-4'>
+            <Link href='/' className='flex items-center shrink-0'>
               <Image
                 src='/images/logo.png'
                 height={100}
                 width={100}
                 alt={APP_NAME}
+                className='h-16 w-auto object-contain'
               />
             </Link>
-            <MainNav className='mx-6' />
-            <div className='ml-auto items-center flex space-x-4'>
+            <MainNav className='mx-6 shrink-0' />
+            <div className='ml-auto items-center flex space-x-4 min-w-0'>
               <Menu />
             </div>
           </div>
