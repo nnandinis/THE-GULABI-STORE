@@ -21,7 +21,11 @@ const Charts = ({
           fontSize={12}
           tickLine={false}
           axisLine={false}
-          tickFormatter={(value) => `₹${value}`}
+          tickFormatter={(value) =>
+            value > 1000
+              ? `₹${(value / 1000).toFixed(1)}k`
+              : `₹${value}`
+          }
         />
         <Bar
           dataKey='totalSales'

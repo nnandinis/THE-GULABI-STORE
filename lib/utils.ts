@@ -54,9 +54,10 @@ export function round2(value: number | string) {
 }
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat('en-IN', {
-  currency: 'INR',
   style: 'currency',
-  minimumFractionDigits: 2,
+  currency: 'INR',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
 });
 
 // Format currency using the formatter above

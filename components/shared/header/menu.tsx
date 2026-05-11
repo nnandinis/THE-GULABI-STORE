@@ -17,6 +17,12 @@ const Menu = () => {
       <nav className='hidden md:flex w-full max-w-xs gap-1'>
         <ModeToggle />
         <Button asChild variant='ghost'>
+          <Link href='/about'>About</Link>
+        </Button>
+        <Button asChild variant='ghost'>
+          <Link href='/artisans'>Artisans</Link>
+        </Button>
+        <Button asChild variant='ghost'>
           <Link href='/cart'>
             <ShoppingCart /> Cart
           </Link>
@@ -31,6 +37,12 @@ const Menu = () => {
           <SheetContent className='flex flex-col items-start'>
             <SheetTitle>Menu</SheetTitle>
             <ModeToggle />
+            <Button asChild variant='ghost'>
+              <Link href='/about'>About</Link>
+            </Button>
+            <Button asChild variant='ghost'>
+              <Link href='/artisans'>Artisans</Link>
+            </Button>
             <Button asChild variant='ghost'>
               <Link href='/cart'>
                 <ShoppingCart /> Cart

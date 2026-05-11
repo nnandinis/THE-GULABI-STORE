@@ -38,3 +38,20 @@ export type Review = z.infer<typeof insertReviewSchema> & {
   createdAt: Date;
   user?: { name: string };
 };
+
+export type Artisan = {
+  id: string;
+  name: string;
+  craft: string;
+  bio: string;
+  location: string;
+  profileImage: string;
+  portfolioImages: string[];
+  phone: string | null;
+  email: string | null;
+  instagramHandle: string | null;
+  yearsOfExperience: number;
+  isFeatured: boolean;
+  createdAt: Date;
+  products?: Product[];
+};
