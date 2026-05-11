@@ -1,4 +1,4 @@
-import { DollarSign, Headset, IndianRupee, ShoppingBag, WalletCards } from 'lucide-react';
+import { Headset, IndianRupee, ShoppingBag, WalletCards } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
 const IconBoxes = () => {

@@ -37,7 +37,7 @@ const Homepage = async () => {
             marginTop: '0.5rem',
           }}
         >
-          Every piece tells a story of Rajasthan's living craft traditions
+          Every piece tells a story of Rajasthan&apos;s living craft traditions
         </p>
         <hr
           style={{
