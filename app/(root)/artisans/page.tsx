@@ -27,9 +27,9 @@ export default async function ArtisansPage() {
     <div style={{ ...poppins, color: 'var(--deep-brown)', marginTop: '-0.5rem' }}>
       {/* Hero */}
       <section
+        className='bg-[#F2D9E0] dark:bg-[#2C1810]'
         style={{
           ...fullBleed,
-          background: '#F2D9E0',
           padding: '4rem 1.25rem',
           textAlign: 'center',
         }}

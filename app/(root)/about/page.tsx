@@ -27,18 +27,18 @@ const poppins = { fontFamily: "'Poppins', sans-serif" };
 export default function AboutPage() {
   return (
     <div
+      className='dark:text-[#F5E6D3]'
       style={{
         ...poppins,
-        color: 'var(--deep-brown)',
         marginTop: '-0.5rem',
         paddingBottom: '3rem',
       }}
     >
       {/* 1. Hero */}
       <section
+        className='bg-[#F2D9E0] dark:bg-[#2C1810]'
         style={{
           ...fullBleed,
-          backgroundColor: '#F2D9E0',
           padding: 'clamp(3.5rem, 10vw, 6rem) 1.25rem',
           textAlign: 'center',
           borderBottom: '1px solid color-mix(in srgb, var(--gold) 35%, transparent)',
@@ -46,12 +46,12 @@ export default function AboutPage() {
       >
         <div style={inner}>
           <h1
+            className='dark:text-[#F5E6D3]'
             style={{
               ...playfair,
               fontSize: 'clamp(2.5rem, 6vw, 3.75rem)',
               fontWeight: 600,
               lineHeight: 1.12,
-              color: 'var(--deep-brown)',
               margin: 0,
               marginBottom: '1.25rem',
             }}
@@ -59,12 +59,12 @@ export default function AboutPage() {
             Our Story
           </h1>
           <p
+            className='dark:text-[#F5E6D3]'
             style={{
               ...poppins,
               fontSize: 'clamp(1.05rem, 2.2vw, 1.25rem)',
               fontWeight: 400,
               lineHeight: 1.65,
-              color: 'var(--deep-brown)',
               maxWidth: '36rem',
               margin: '0 auto',
               opacity: 0.92,
@@ -77,9 +77,9 @@ export default function AboutPage() {
 
       {/* 2. What We Do */}
       <section
+        className='bg-[#FAF0F3] dark:bg-[#1A0E0A]'
         style={{
           ...fullBleed,
-          backgroundColor: '#FAF0F3',
           padding: 'clamp(3rem, 8vw, 5rem) 0',
         }}
       >
@@ -94,11 +94,11 @@ export default function AboutPage() {
         >
           <div>
             <h2
+              className='dark:text-[#F5E6D3]'
               style={{
                 ...playfair,
                 fontSize: 'clamp(1.75rem, 3.5vw, 2.35rem)',
                 fontWeight: 600,
-                color: 'var(--deep-brown)',
                 margin: 0,
                 marginBottom: '1.25rem',
               }}
@@ -115,11 +115,11 @@ export default function AboutPage() {
               }}
             />
             <p
+              className='dark:text-[#F5E6D3]'
               style={{
                 ...poppins,
                 fontSize: '1.05rem',
                 lineHeight: 1.8,
-                color: 'var(--deep-brown)',
                 margin: 0,
                 opacity: 0.95,
               }}
@@ -133,12 +133,12 @@ export default function AboutPage() {
             </p>
           </div>
           <div
+            className='bg-[#E8C4CF] dark:bg-[#3D1A10]'
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
               gap: '0.875rem',
               padding: '1rem',
-              backgroundColor: '#E8C4CF',
               borderRadius: '16px',
               boxShadow: '0 20px 50px rgba(74, 44, 42, 0.08)',
             }}
@@ -167,8 +167,8 @@ export default function AboutPage() {
             ].map((card) => (
               <article
                 key={card.title}
+                className='bg-[#F5DDE4] dark:bg-[#3D2018] dark:border-[#6B3A2A]'
                 style={{
-                  backgroundColor: '#F5DDE4',
                   borderRadius: '12px',
                   padding: '1.25rem',
                   textAlign: 'center',
@@ -186,9 +186,9 @@ export default function AboutPage() {
                   {card.emoji}
                 </div>
                 <h3
+                  className='dark:text-[#F5E6D3]'
                   style={{
                     fontFamily: "'Playfair Display', serif",
-                    color: 'var(--deep-brown)',
                     fontSize: '1rem',
                     fontWeight: 600,
                     margin: 0,
@@ -215,9 +215,9 @@ export default function AboutPage() {
 
       {/* 3. Why We Exist */}
       <section
+        className='bg-[#F2D9E0] dark:bg-[#2C1810]'
         style={{
           ...fullBleed,
-          backgroundColor: '#F2D9E0',
           padding: 'clamp(3rem, 8vw, 5rem) 1.25rem',
           borderTop: '1px solid color-mix(in srgb, var(--muted-rose) 25%, transparent)',
           borderBottom: '1px solid color-mix(in srgb, var(--muted-rose) 25%, transparent)',
@@ -239,11 +239,11 @@ export default function AboutPage() {
             Why We Exist
           </p>
           <h2
+            className='dark:text-[#F5E6D3]'
             style={{
               ...playfair,
               fontSize: 'clamp(1.75rem, 3.5vw, 2.35rem)',
               fontWeight: 600,
-              color: 'var(--deep-brown)',
               margin: 0,
               marginBottom: '1.25rem',
             }}
@@ -251,11 +251,11 @@ export default function AboutPage() {
             Bridging the Digital Divide
           </h2>
           <p
+            className='dark:text-[#F5E6D3]'
             style={{
               ...poppins,
               fontSize: '1.05rem',
               lineHeight: 1.85,
-              color: 'var(--deep-brown)',
               margin: 0,
               opacity: 0.95,
             }}
@@ -272,20 +272,20 @@ export default function AboutPage() {
 
       {/* 4. Our Vision */}
       <section
+        className='bg-[#FAF0F3] dark:bg-[#1A0E0A]'
         style={{
           ...fullBleed,
-          backgroundColor: '#FAF0F3',
           padding: 'clamp(3rem, 8vw, 5rem) 1.25rem',
           textAlign: 'center',
         }}
       >
         <div style={{ ...inner, maxWidth: '44rem' }}>
           <h2
+            className='dark:text-[#F5E6D3]'
             style={{
               ...playfair,
               fontSize: 'clamp(1.75rem, 3.5vw, 2.35rem)',
               fontWeight: 600,
-              color: 'var(--deep-brown)',
               margin: 0,
               marginBottom: '1.25rem',
             }}
@@ -293,11 +293,11 @@ export default function AboutPage() {
             Empowering the Women of Rajasthan
           </h2>
           <p
+            className='dark:text-[#F5E6D3]'
             style={{
               ...poppins,
               fontSize: '1.05rem',
               lineHeight: 1.85,
-              color: 'var(--deep-brown)',
               margin: 0,
               opacity: 0.95,
             }}
@@ -313,19 +313,19 @@ export default function AboutPage() {
 
       {/* 5. Future Goals */}
       <section
+        className='bg-[#F2D9E0] dark:bg-[#2C1810]'
         style={{
           ...fullBleed,
-          backgroundColor: '#F2D9E0',
           padding: 'clamp(3rem, 8vw, 5rem) 0 4rem',
         }}
       >
         <div style={inner}>
           <h2
+            className='dark:text-[#F5E6D3]'
             style={{
               ...playfair,
               fontSize: 'clamp(1.75rem, 3.5vw, 2.35rem)',
               fontWeight: 600,
-              color: 'var(--deep-brown)',
               textAlign: 'center',
               margin: 0,
               marginBottom: '2.5rem',
@@ -360,8 +360,8 @@ export default function AboutPage() {
             ].map((card) => (
               <article
                 key={card.title}
+                className='bg-[#FAF0F3] dark:bg-[#3D2018] dark:border-[#6B3A2A]'
                 style={{
-                  backgroundColor: '#FAF0F3',
                   border: '2px solid var(--gold)',
                   borderRadius: '14px',
                   padding: '1.75rem 1.5rem',
@@ -370,11 +370,11 @@ export default function AboutPage() {
                 }}
               >
                 <h3
+                  className='dark:text-[#F5E6D3]'
                   style={{
                     ...playfair,
                     fontSize: '1.25rem',
                     fontWeight: 600,
-                    color: 'var(--deep-brown)',
                     margin: 0,
                     marginBottom: '0.75rem',
                   }}
@@ -382,11 +382,11 @@ export default function AboutPage() {
                   {card.title}
                 </h3>
                 <p
+                  className='dark:text-[#F5E6D3]'
                   style={{
                     ...poppins,
                     fontSize: '0.95rem',
                     lineHeight: 1.7,
-                    color: 'var(--deep-brown)',
                     margin: 0,
                     opacity: 0.9,
                   }}
@@ -401,20 +401,20 @@ export default function AboutPage() {
 
       {/* 6. Closing quote */}
       <section
+        className='bg-[#E8C4CF] dark:bg-[#3D1A10]'
         style={{
           ...fullBleed,
-          backgroundColor: '#E8C4CF',
           padding: 'clamp(3rem, 8vw, 4.5rem) 1.25rem',
           textAlign: 'center',
         }}
       >
         <blockquote
+          className='dark:text-[#F5E6D3]'
           style={{
             ...playfair,
             fontSize: 'clamp(1.35rem, 3.5vw, 1.85rem)',
             fontStyle: 'italic',
             fontWeight: 500,
-            color: 'var(--deep-brown)',
             margin: 0,
             maxWidth: '36rem',
             marginLeft: 'auto',
