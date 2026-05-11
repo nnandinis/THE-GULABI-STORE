@@ -8,6 +8,7 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { updateProfile } from '@/lib/actions/user.actions';
 import { updateProfileSchema } from '@/lib/validators';
@@ -24,6 +25,9 @@ const ProfileForm = () => {
     defaultValues: {
       name: session?.user?.name ?? '',
       email: session?.user?.email ?? '',
+      phone: '',
+      city: '',
+      bio: '',
     },
   });
 
@@ -83,9 +87,66 @@ const ProfileForm = () => {
             name='name'
             render={({ field }) => (
               <FormItem className='w-full'>
+                <p className='text-sm font-medium text-muted-foreground mb-1'>
+                  Name
+                </p>
                 <FormControl>
                   <Input
                     placeholder='Name'
+                    className='input-field'
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name='phone'
+            render={({ field }) => (
+              <FormItem className='w-full'>
+                <p className='text-sm font-medium text-muted-foreground mb-1'>
+                  Phone
+                </p>
+                <FormControl>
+                  <Input
+                    placeholder='Phone Number'
+                    className='input-field'
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name='city'
+            render={({ field }) => (
+              <FormItem className='w-full'>
+                <p className='text-sm font-medium text-muted-foreground mb-1'>
+                  City
+                </p>
+                <FormControl>
+                  <Input placeholder='City' className='input-field' {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name='bio'
+            render={({ field }) => (
+              <FormItem className='w-full'>
+                <p className='text-sm font-medium text-muted-foreground mb-1'>
+                  Bio
+                </p>
+                <FormControl>
+                  <Textarea
+                    placeholder='Tell us a bit about yourself...'
+                    rows={3}
                     className='input-field'
                     {...field}
                   />
@@ -99,6 +160,7 @@ const ProfileForm = () => {
           type='submit'
           size='lg'
           className='button col-span-2 w-full'
+          style={{ backgroundColor: 'var(--primary-pink)' }}
           disabled={form.formState.isSubmitting}
         >
           {form.formState.isSubmitting ? 'Submitting...' : 'Update Profile'}
